@@ -57,7 +57,6 @@ def levenshtein(seq1, seq2):
 				)
 	return matrix[size_x - 1, size_y - 1]
 
-
 def get_arecord_ip(host):
 	ans = b''
 	try:
