@@ -6,16 +6,17 @@ This repo uses the CertStream python library to look at the names of domains bei
 and each of many "top domains" looking for mispellings/bitflips. The threshold for triggering a message can be tweaked (currently low so it misses many but has 
 fewer false positives) inside the `test_domain()` function. 
 
-# Requirements
+Example:
+```bash
+03/14/22 06:44:22 arttj.net was registered [similar to att.net? IP:23.108.179.149]
+```
+
+## Requirements
 You will need a few python libraries but all are on pip. Grab the needed ones using:
 ```bash
 pip install certstream dnspython pandas
 ```
 
-Example:
-```bash
-03/14/22 06:44:22 arttj.net was registered [similar to att.net? IP:23.108.179.149]
-```
 ## Usage:
 `python3 spotasquat.py`
 
