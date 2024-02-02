@@ -1,9 +1,16 @@
+
 # Titleist
 Watching sketchy domains as they are registered. 
 
 This repo uses the CertStream python library to look at the names of domains being registered for DNS. It then looks at the levenshtein distance between this name
 and each of many "top domains" looking for mispellings/bitflips. The threshold for triggering a message can be tweaked (currently low so it misses many but has 
 fewer false positives) inside the `test_domain()` function. 
+
+# Requirements
+You will need a few python libraries but all are on pip. Grab the needed ones using:
+```bash
+pip install certstream dnspython pandas
+```
 
 Example:
 ```bash
